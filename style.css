@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header-logo{
+    width: 121px;
+    height: 79px;
+    padding: 30px;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.navigation a{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: #F2F2F2 1px solid;
+}
+
+.navigation a:hover, .navigation .active{
+    color: #0065FC;
+    border-bottom: #0065FC 2px solid;
+}
+/*header éliminé*/
+
+.info-group{
+    padding: 0 8px;
+    margin-bottom: 25px;
+}
+
+.info-group__head{
+    margin-bottom: 25px;
+}
+
+.info__title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-group__descr{
+    margin: 0;
+}
+
+.seach-bar{
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+input{
+    width: calc(100% - 99px);
+    border: none;
+}
+
+.localisation{
+    width: 50px;
+    height: 49px;
+    display: block;
+    padding: 17px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+.seach-bar__button{
+    width: 49px;
+    background-color: #0065FC;
+    border-radius: 10px;
+    border: none;
+}
+
+.seach-bar__button span{
+    display: none;
+}
+
+.title{
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+.filter-bar__info-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.info{
+    width: 165.5px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16.44px;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+}
+
+.info a{
+    color: rgba(0, 0, 0, 1);
+    margin-top: -5px;
+    display: flex;
+}
+
+.info img{
+    display: block;
+    margin-right: 8px;
+    margin-left: 18px;
+}
+
+.info span{
+    margin-top: 3px;
+}
+
+.filter__description{
+    display: flex;
+    margin-top: 0;
+}
+
+.filter__description img{
+    margin-right: 10px;
+}
+
+.filter__description p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.activ, .info:hover{
+    background-color: rgba(222, 235, 255, 1);
+}
+/*info-group éliminé*/
+
+
+
+/*version tablette*/
+@media screen and (min-width: 1024px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .navigation{
+        width: 344px;
+        margin-top: -48px;
+        justify-content: center;
+    }
+
+    .navigation a{
+        border-bottom: none;
+        padding-top: 10px;
+        margin-top: 0;
+        padding-bottom: 0;
+        width: auto;
+        margin-left: 65px;
+    }
+
+    .navigation a:hover, .navigation .active{
+        border-top: #0065FC 2px solid;
+        border-bottom: none;
+    }
+
+
+    /*header éliminé*/
+
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-group{
+        width: 964px;
+    }
+
+    .seach-bar{
+        width: 377px;
+    }
+
+    .seach-bar__button{
+        width: 137px;
+        border-radius: 0 15px 15px  0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.13px;
+        color: #fff;
+        padding: 15px 16px;
+    }
+    .seach-bar__button img{
+        display: none;
+    }
+
+    .filter-bar__info-list{
+        flex-wrap: nowrap;
+    }
+
+    .filter-bar{
+        width: 668px;
+    }
+
+    .info{
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .info:last-child{
+        margin-right: 0;
+        background-color: rgba(222, 235, 255, 1);
+    }
+    
+    .filter-bar .activ{
+        background-color: transparent;
+    }
+
+    .activ:hover{
+        background-color: rgba(222, 235, 255, 1);
+    }   
+}
