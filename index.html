@@ -1,60 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8abf08ec08.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="header">
-            <img src="images/logo.png" alt="Booki logo" class="header-logo" >
+        <img src="images/logo.png" alt="Booki logo" class="header-logo">
         <nav class="navigation">
-            <a href="#" class="active">Hébergement</a>
-            <a href="#">Activités</a>
+            <ul class="nav__links">
+                <li class="link"><a href="#" class="active">Hébergement</a></li>
+                <li class="link"><a href="#">Activités</a></li>
+            </ul>
         </nav>
     </header>
     <main class="main">
-    <section class="info-group">
-        <div class="info-group__head">
-        <h1 class="info__title">
-            Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <p class="info-group__descr">En plein centre-ville ou en pleine nature</p>
-    </div>
-    <form method="get" class="seach-bar">
-        <span class="localisation"><img src="images/localisation.png" alt="location de la ville" class="localisation__img"></span>
-        <input type="search">
-        <button class="seach-bar__button"><img src="images/seach.png" alt="recherche image" class="seach-bar__img"><span>Recherche</span></button>
-    </form>
-    <div class="filter-bar">
-        <h2 class="title">Filtres</h2>
-        <ul class="filter-bar__info-list">
-            <li class="info"><a href="#"><img src="images/econome.png" alt="info image"><span>Économique</span></a></li>
-            <li class="info"><a href="#"><img src="images/famille.png" alt="info image"><span>Familial</span></a></li>
-            <li class="info activ"><a href="#"><img src="images/romantique.png" alt=" info image"><span>Romantique</span></a></li>
-            <li class="info"><a href="#"><img src="images/pepites.png" alt="info image"><span>Nos pépites</span></a></li>
-        </ul>
-        <div class="filter__description"><span><img src="images/desc__img.png" alt="icone"></span><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
-    </div>
-    </section>
+        <section class="info-group">
+            <div class="info-group__head">
+                <h1 class="title">
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h1>
+                <p class="info-group__descr">En plein centre-ville ou en pleine nature</p>
+            </div>
+            <form method="get" class="seach-bar">
+                <span class="localisation"><i class="fa-solid fa-location-dot"></i></span>
+                <input type="search">
+                <button class="seach-bar__button"><i
+                        class="fa-solid fa-magnifying-glass"></i><span>Recherche</span></button>
+            </form>
+            <div class="filter-bar">
+                <h2 class="filter-title">Filtres</h2>
+                <ul class="filter-bar__info-list">
+                    <li class="info"><a href="#"><i
+                                class="fa-solid fa-money-bill-1-wave"></i><span>Économique</span></a></li>
+                    <li class="info"><a href="#"><i class="fa-solid fa-person"></i><span>Familial</span></a></li>
+                    <li class="info activ"><a href="#"><i class="fa-solid fa-heart"></i><span>Romantique</span></a></li>
+                    <li class="info"><a href="#"><i class="fa-solid fa-fire"></i><span>Nos
+                                pépites</span></a></li>
+                </ul>
+                <div class="filter__description">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="offers">
+                <div class="offers-title">
+                    <h2 class="title">Les plus populaires</h2><i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="offers__list">
+                    <article>
+                        <a href="#" class="offer">
+                        <img src="images/matin.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel Le soleil du matin</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>128€</strong></p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#" class="offer">
+                        <img src="images/coeur_de_l'eau.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Chambres d’hôtes Au cœur de l’eau</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>71€</strong></p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#" class="offer">
+                        <img src="images/bleu_blanc.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel Bleu et Blanc</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>68€</strong></p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                </div>
+            </div>
+            
 
-<section class="offers">
-    <h2 class="title">Les plus populaires</h2>
-    <div class="offers__list">
-        <article class="offer">
-            <h3>Hôtel Le soleil du matin</h3>
-            <p>Nuit à partir de 128<strong>€</strong></p> 
-        </article>
+             <div class="offers_main">
+                <h2 class="title">Hébergements à Marseille</h2>
+                <div class="offers_main_list">
+                    <article>
+                        <a href="#"  class="main__offer">
+                        <img src="images/port.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel du port</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>52€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#"  class="main__offer">
+                        <img src="images/amina.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel Chez Amina</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>96€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#"  class="main__offer">
+                        <img src="images/mouettes.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel Les mouettes</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>76€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href=""  class="main__offer">
+                        <img src="images/mer.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Hôtel de la mer</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>46€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#"  class="main__offer">
+                        <img src="images/canebiere.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Auberge La Canebière</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>25€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                    <article>
+                        <a href="#"  class="main__offer">
+                        <img src="images/panier.png" alt="hotel image">
+                        <div class="offer__desc">
+                            <h3 class="offer__title">Auberge Le Panier</h3>
+                            <p class="offer__prise">Nuit à partir de <strong>23€</strong></p>
+                              <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
+                </div>
+            </div> 
 
-    </div>
-
-
-</section>
-</main>
+        </section>
+    </main>
 </body>
+
 </html>
