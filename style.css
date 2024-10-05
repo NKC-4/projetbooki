@@ -17,6 +17,10 @@ li {
     list-style: none;
 }
 
+i:last-child{
+    color: rgba(242, 242, 242, 1);
+}
+
 .header {
     padding-bottom: 0;
     margin-bottom: 25px;
@@ -221,10 +225,6 @@ input {
     background-color: #fff;
 }
 
-.offer img {
-    margin-right: 15px;
-}
-
 .offer__desc {
     position: relative;
 }
@@ -261,6 +261,11 @@ input {
 .main__offer img {
     display: block;
     margin-left: -5px;
+}
+
+.offer .photo{
+    margin-right: 15px;
+    height: 148px;
 }
 
 .main__offer {
@@ -429,6 +434,7 @@ input {
     padding: 0 15px;
     background-color: rgba(242, 242, 242, 1);
     margin-bottom: 50px;
+    width: 924px;
 }
 
 .offers_main_list {
@@ -439,7 +445,7 @@ input {
 
 .main__offer img {
     display: block;
-    margin-left: -5px;
+    margin-left: 0px;
     width: 100%;
 }
 
@@ -448,5 +454,37 @@ input {
    background-color: #fff;
 }
 
+.photo{
+    position: relative;
+}
 
+.photo:hover .photo-hover{
+    display: flex;
+}
+
+.photo-hover{
+position: absolute;
+top: 4px;
+bottom: 0;
+right: 0;
+left: 4px;
+width: 97%;
+height: 92%;
+background-color: rgba(0, 0, 0, 0.4);
+display: none;
+border-radius: 10px 10px 0 0 ;
+}
+
+.offer .photo-hover{
+position: absolute;
+top: 5px;
+bottom: 0;
+right: 0;
+left: 4px;
+width: 97%;
+height: 93%;
+background-color: rgba(0, 0, 0, 0.4);
+display: none;
+border-radius: 10px 0 0 10px ;
+}
 }
