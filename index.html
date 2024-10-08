@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +17,8 @@
         <img src="images/logo.png" alt="Booki logo" class="header-logo">
         <nav class="navigation">
             <ul class="nav__links">
-                <li class="link"><a href="#" class="active">Hébergement</a></li>
-                <li class="link"><a href="#">Activités</a></li>
+                <li class="link"><a href="#hebergement__link" class="active">Hébergement</a></li>
+                <li class="link"><a href="#activity__link">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -121,7 +120,7 @@
             </div>
 
 
-            <aside class="offers_main">
+            <aside class="offers_main" id="hebergement__link">
                 <h2 class="title">Hébergements à Marseille</h2>
                 <div class="offers_main_list">
                     <article>
@@ -243,18 +242,19 @@
             </aside>
         </section>
 
-        <section class="activités">
+        <section class="activités" id="activity__link">
             <h2 class="title">Activités à Marseille</h2>
             <div class="activite__list">
                 <article>
                     <a href="#" class="activity">
                         <div class="photo">
                             <picture>
-                                <source srcset="images/vieux__port__deks.png" media="(min-width: 1430px)" />
-                                <source srcset="images/vieux__port__tablette.png" media="(min-width: 1024px)" />
+                                <source srcset="images/vieux__port__deks.png" media="(min-width: 1430px)">
+                                <source srcset="images/vieux__port__tablette.png" media="(min-width: 1024px)">
                                 <img src="images/vieux__port.png" alt="hotel image">
-                                <div class="photo-hover"></div>
+
                             </picture>
+                            <div class="photo-hover"></div>
                         </div>
                         <h3 class="offer__title">Vieux-Port</h3>
                     </a>
@@ -263,11 +263,12 @@
                     <a href="#" class="activity">
                         <div class="photo">
                             <picture>
-                                <source srcset="images/pomegues__deks.png" media="(min-width: 1430px)" />
-                                <source srcset="images/pomegues__tablette.png" media="(min-width: 1024px)" />
+                                <source srcset="images/pomegues__deks.png" media="(min-width: 1430px)">
+                                <source srcset="images/pomegues__tablette.png" media="(min-width: 1024px)">
                                 <img src="images/pomegues.png" alt="hotel image">
-                                <div class="photo-hover"></div>
+
                             </picture>
+                            <div class="photo-hover"></div>
                         </div>
                         <h3 class="offer__title">Fort de Pomègues</h3>
                     </a>
@@ -276,11 +277,11 @@
                     <a href="#" class="activity">
                         <div class="photo">
                             <picture>
-                                <source srcset="images/calanques__deks.png" media="(min-width: 1430px)" />
-                                <source srcset="images/calanques__tablette.png" media="(min-width: 1024px)" />
+                                <source srcset="images/calanques__deks.png" media="(min-width: 1430px)">
+                                <source srcset="images/calanques__tablette.png" media="(min-width: 1024px)">
                                 <img src="images/calanques.png" alt="hotel image">
-                                <div class="photo-hover"></div>
                             </picture>
+                            <div class="photo-hover"></div>
                         </div>
                         <h3 class="offer__title">Parc national des Calanques</h3>
                     </a>
@@ -289,11 +290,11 @@
                     <a href="#" class="activity">
                         <div class="photo">
                             <picture>
-                                <source srcset="images/garde__deks.png" media="(min-width: 1430px)" />
-                                <source srcset="images/garde__tablette.png" media="(min-width: 1024px)" />
+                                <source srcset="images/garde__deks.png" media="(min-width: 1430px)">
+                                <source srcset="images/garde__tablette.png" media="(min-width: 1024px)">
                                 <img src="images/garde.png" alt="hotel image">
-                                <div class="photo-hover"></div>
                             </picture>
+                            <div class="photo-hover"></div>
                         </div>
                         <h3 class="offer__title">Notre-Dame-de-la-Garde</h3>
                     </a>
