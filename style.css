@@ -273,9 +273,8 @@ input::placeholder {
 
 .filter__description i {
     margin-right: 10px;
-    font-size: 8px;
-    width: 24px;
-    height: 20px;
+    width: 34px;
+    height: 34px;
     color: #0065FC;
     border: 1px solid rgba(217, 217, 217, 1);
     text-align: center;
@@ -627,7 +626,7 @@ input::placeholder {
 
 @media screen and (min-width: 1024px) {
     .header {
-        width: 1014px;
+        width: 1004px;
         padding-right: 0;
         padding-left: 0;
         display: flex;
@@ -664,15 +663,18 @@ input::placeholder {
         width: auto;
     }
 
+    .activité__link{
+        
+        border-top: 2px solid transparent;
+    }
+
     .link a,
     .link .active {
         width: 100%;
         display: block;
         padding-top: 15px;
         padding-bottom: 0;
-        border: 1px solid transparent;
-
-    }
+   }
 
     .link a:hover,
     .link .active {
